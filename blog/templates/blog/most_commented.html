@@ -1,0 +1,11 @@
+
+<div class="trending-pills-container">
+    {% for post in most_commented_posts %}
+        <a href="{{ post.get_absolute_url }}" class="trending-pill">
+            {{ post.title }}
+            <span class="comment-count">{{ post.total_comments }}</span>
+        </a>
+    {% empty %}
+        <p class="text-muted">لا توجد مناقشات حالياً.</p>
+    {% endfor %}
+</div>

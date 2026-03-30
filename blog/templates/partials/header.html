@@ -1,0 +1,93 @@
+<nav class="navbar navbar-expand-lg sticky-top bg-white shadow-sm py-3 mb-4">
+    <div class="container-fluid px-lg-5">
+        <!-- الشعار -->
+        <a class="navbar-brand fw-bold fs-3 text-primary d-flex align-items-center" href="{% url 'blog:index' %}">
+            <i class="bi bi-code-square me-2"></i> مدونة الوافي
+        </a>
+
+        <!-- زر الجوال -->
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- القائمة المنهارة -->
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-center">
+                <li class="nav-item"><a class="nav-link px-3 fw-bold text-dark" href="{% url 'blog:index' %}">الرئيسية</a></li>
+                <li class="nav-item"><a class="nav-link px-3 text-muted" href="{% url 'profile' %}">الملف الشخصي</a></li>
+
+                {% if user.is_staff %}
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle bg-primary-subtle text-primary rounded-pill px-3 ms-lg-2 mt-2 mt-lg-0" href="#" role="button" data-bs-toggle="dropdown">
+                        إدارة المحتوى
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end shadow border-0 rounded-4 mt-2">
+                        <li><a class="dropdown-item py-2" href="{% url 'blog:user_dashboard' %}"><i class="bi bi-speedometer2 me-2"></i> لوحة التحكم</a></li>
+                        <li><a class="dropdown-item py-2" href="{% url 'blog:post_create' %}"><i class="bi bi-plus-circle me-2"></i> إنشاء مقال</a></li>
+                    </ul>
+                </li>
+                {% endif %}
+            </ul>
+
+            <!-- أدوات المستخدم والبحث -->
+            <div class="d-flex align-items-center flex-column flex-lg-row gap-3">
+                <!-- البحث -->
+                <form class="d-flex m-0" action="{% url 'blog:index' %}" method="get">
+                    <div class="input-group">
+                        <button class="btn btn-outline-primary rounded-start-pill px-3 border-end-0" type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                        <input name="q" class="form-control rounded-end-pill border-primary border-start-0 ps-2" type="search" placeholder="ابحث..." style="width: 130px;">
+                    </div>
+                </form>
+
+                <div class="d-flex align-items-center gap-3">
+                    {% if user.is_authenticated %}
+                        <!-- جرس الإشعارات -->
+                        <div class="position-relative">
+                            <a class="text-dark fs-5 px-2" href="javascript:void(0)" id="bell-link" onclick="toggleNotifications()">
+                                <i class="bi bi-bell"></i>
+                                {% if unread_notifications_count > 0 %}
+                                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 0.55rem;">
+                                        {{ unread_notifications_count }}
+                                    </span>
+                                {% endif %}
+                            </a>
+                            <!-- قائمة الإشعارات -->
+                            <div id="noti-dropdown" class="shadow-lg border-0 rounded-4 p-2 bg-white" style="display:none; position: absolute; left: 0; top: 45px; width: 300px; z-index: 1100; max-height: 400px; overflow-y: auto;">
+                                <div class="d-flex justify-content-between align-items-center p-2 border-bottom mb-2">
+                                    <span class="fw-bold small text-primary">الإشعارات</span>
+                                    <a href="{% url 'blog:mark_all_read' %}" class="text-decoration-none small text-muted">تحديد الكل</a>
+                                </div>
+                                {% for note in latest_notifications %}
+                                    <a class="dropdown-item rounded-3 p-2 mb-1 {% if not note.is_read %}bg-light border-start border-primary border-4{% endif %}" href="{% url 'blog:mark_as_read' note.id %}">
+                                        <div class="d-flex align-items-center">
+                                            <img src="{{ note.sender.profile.image.url }}" class="rounded-circle me-2" style="width: 35px; height: 35px; object-fit: cover;">
+                                            <div style="flex: 1;">
+                                                <p class="mb-0 small text-dark lh-sm">{{ note.text }}</p>
+                                                <small class="text-muted" style="font-size: 0.65rem;">{{ note.created_at|timesince }}</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                {% empty %}
+                                    <div class="p-4 text-center text-muted small">لا توجد إشعارات</div>
+                                {% endfor %}
+                            </div>
+                        </div>
+
+                        <div class="vr mx-1 d-none d-lg-block"></div>
+                        <span class="text-dark fw-bold small d-none d-md-inline">{{ user.username }}</span>
+
+                        <form action="{% url 'logout' %}" method="post" class="m-0">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-outline-danger btn-sm rounded-pill px-3 fw-bold">خروج</button>
+                        </form>
+                    {% else %}
+                        <a href="{% url 'register' %}" class="btn btn-primary rounded-pill px-3 fw-bold shadow-sm btn-sm">إنشاء حساب</a>
+                        <a href="{% url 'login' %}" class="btn btn-outline-success rounded-pill px-3 fw-bold btn-sm">دخول</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

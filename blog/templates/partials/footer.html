@@ -1,0 +1,77 @@
+<footer class="footer-section mt-5 pt-5 pb-3 bg-white border-top shadow-sm">
+    <div class="container">
+        <div class="row g-4 text-center text-md-end">
+            <!-- العمود الأول: الهوية -->
+            <div class="col-md-4">
+                <h5 class="text-primary fw-bold mb-3">مدونة الوافي <i class="bi bi-code-slash ms-1"></i></h5>
+                <p class="text-muted small leading-relaxed">
+                    منصة تقنية عربية تهدف لتبسيط المفاهيم البرمجية ومشاركة المعرفة التقنية بأسلوب عملي وشيق.
+                </p>
+                <!-- أيقونات التواصل بشكل أنيق -->
+                <div class="social-icons mt-3">
+                    <a href="#" class="btn btn-sm btn-light rounded-circle me-2 shadow-sm text-primary"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="btn btn-sm btn-light rounded-circle me-2 shadow-sm text-dark"><i class="bi bi-github"></i></a>
+                    <a href="#" class="btn btn-sm btn-light rounded-circle shadow-sm text-primary"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+
+            <!-- العمود الثاني: روابط تقنية -->
+            <div class="col-md-4">
+                <h5 class="fw-bold mb-3">روابط تقنية</h5>
+                <ul class="list-unstyled footer-links">
+                    <li class="mb-2">
+                        <a href="{% url 'django.contrib.sitemaps.views.sitemap' %}" class="text-decoration-none text-muted small hover-primary" target="_blank">
+                            <i class="bi bi-map me-1"></i> خريطة الموقع (Sitemap)
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="/robots.txt" class="text-decoration-none text-muted small hover-primary" target="_blank">
+                            <i class="bi bi-robot me-1"></i> ملف الروبوتات (Robots.txt)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'blog:post_feed' %}" class="btn btn-sm btn-warning-subtle text-warning rounded-pill px-3 fw-bold" style="font-size: 0.75rem;">
+                            <i class="bi bi-rss-fill me-1"></i> اشترك في الـ RSS
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- العمود الثالث: إخلاء المسؤولية (الحماية القانونية) -->
+            <div class="col-md-4">
+                <h5 class="fw-bold mb-3 text-danger"><i class="bi bi-shield-check me-1"></i> تنويه قانوني</h5>
+                <p class="text-muted" style="font-size: 0.8rem; line-height: 1.6;">
+                    المحتوى المنشور في هذه المدونة هو لأغراض <strong>تعليمية وبرمجية فقط</strong>. إدارة الموقع غير مسؤولة عن أي سوء استخدام للكود المصدري أو المعلومات الواردة، ولا نتحقق من صحة آراء المستخدمين في التعليقات.
+                </p>
+            </div>
+        </div>
+
+        <hr class="my-4 opacity-25">
+
+        <!-- حقوق النشر والسنة الديناميكية -->
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-end">
+                <p class="text-muted small mb-0">
+                    &copy; <strong>{% now "Y" %}</strong> جميع الحقوق محفوظة لـ <span class="text-primary fw-bold">مدونة الوافي</span>
+                </p>
+            </div>
+            <div class="col-md-6 text-center text-md-start">
+                <span class="badge bg-light text-muted fw-normal rounded-pill p-2" style="font-size: 0.7rem;">
+                    صُنع بكل <i class="bi bi-heart-fill text-danger mx-1"></i> بواسطة سلطان
+                </span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+    /* لمسات "الوحوش" للتنسيق */
+    .footer-section { background-color: #ffffff; }
+    .hover-primary:hover { color: #0d6efd !important; text-decoration: underline !important; }
+    .btn-warning-subtle { background-color: #fff3cd; border: 1px solid #ffe69c; }
+    .leading-relaxed { line-height: 1.7; }
+    
+    /* حركة أيقونات التواصل */
+    .social-icons a { transition: transform 0.3s ease; }
+    .social-icons a:hover { transform: translateY(-3px); }
+</style>

@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <div class="card border-0 shadow-sm rounded-4">
+                <div class="card-header bg-primary text-white p-4 border-0 rounded-top-4 text-center">
+                    <h3 class="mb-0 fw-bold"><i class="bi bi-pencil-square"></i> اكتب مقالاً جديداً</h3>
+                </div>
+                <div class="card-body p-4 bg-white">
+                    <form method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+
+                        <!-- العنوان -->
+                        <div class="mb-4">
+                            <label class="fw-bold mb-2">عنوان المقال</label>
+                            {{ form.title }}
+                        </div>
+
+                        <!-- المحتوى -->
+                        <div class="mb-4">
+                            <label class="fw-bold mb-2">محتوى المقال</label>
+                            {{ form.content }}
+                        </div>
+
+                        <!-- الصورة -->
+                        <div class="mb-4">
+                            <label class="fw-bold mb-2">صورة المقال</label>
+                            {{ form.image }}
+                        </div>
+
+
+                        <div class="text-center mt-5">
+                            <button type="submit" class="btn btn-primary rounded-pill px-5 fw-bold shadow-sm hover-elevate">
+                                إرسال للمراجعة <i class="bi bi-send-check ms-2"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

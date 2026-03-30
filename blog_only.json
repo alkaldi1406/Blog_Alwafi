@@ -1,0 +1,1386 @@
+[
+{
+  "model": "blog.post",
+  "pk": 1,
+  "fields": {
+    "title": "new title",
+    "slug": "new_title",
+    "author": 1,
+    "content": "this is new title 1",
+    "published": "2026-03-22T06:04:55Z",
+    "created": "2026-03-22T06:10:18.516Z",
+    "updated": "2026-03-26T05:35:34.698Z",
+    "status": "PB",
+    "image": "blog/2026/03/26/Unofficial_JavaScript_logo_2.svg.png",
+    "views_count": 2,
+    "likes": [
+      2,
+      5
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 2,
+  "fields": {
+    "title": "Post sultan almalki",
+    "slug": "post-sultan-almalki",
+    "author": 1,
+    "content": "Accordions for extending our Collapse plugin\r\nAlerts for dismissing\r\nButtons for toggling states and checkbox/radio functionality\r\nCarousel for all slide behaviors, controls, and indicators\r\nCollapse for toggling visibility of content\r\nDropdowns for displaying and positioning (also requires Popper)\r\nModals for displaying, positioning, and scroll behavior\r\nNavbar for extending our Collapse and Offcanvas plugins to implement responsive behaviors\r\nNavs with the Tab plugin for toggling content panes\r\nOffcanvases for displaying, positioning, and scroll behavior\r\nScrollspy for scroll behavior and navigation updates\r\nToasts for displaying and dismissing\r\nTooltips and popovers for displaying and positioning (also requires Popper)",
+    "published": "2026-03-22T06:46:24Z",
+    "created": "2026-03-22T06:56:03.008Z",
+    "updated": "2026-03-26T05:35:11.290Z",
+    "status": "PB",
+    "image": "blog/2026/03/26/photo-1542831371-29b0f74f9713.jpeg",
+    "views_count": 6,
+    "likes": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 3,
+  "fields": {
+    "title": "python 33",
+    "slug": "python-33",
+    "author": 1,
+    "content": "This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.\r\n\r\nThis is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.\r\n\r\nThis is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.\r\n\r\nThis is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.",
+    "published": "2026-03-22T08:14:26Z",
+    "created": "2026-03-22T08:14:46.216Z",
+    "updated": "2026-03-26T05:32:50.204Z",
+    "status": "PB",
+    "image": "blog/2026/03/26/images-4.jpeg",
+    "views_count": 3,
+    "likes": [
+      1,
+      2,
+      5
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 4,
+  "fields": {
+    "title": "C++",
+    "slug": "for",
+    "author": 1,
+    "content": "ggjkhgjlhvkuv iughj\r\nkjgbjkhvgh",
+    "published": "2026-03-25T08:18:22Z",
+    "created": "2026-03-25T08:18:47.104Z",
+    "updated": "2026-03-26T05:33:30.497Z",
+    "status": "PB",
+    "image": "blog/2026/03/26/ISO_C_Logo.svg.png",
+    "views_count": 3,
+    "likes": [
+      1,
+      2,
+      5
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 5,
+  "fields": {
+    "title": "تعلم فنون البرمجة",
+    "slug": "learn-program",
+    "author": 1,
+    "content": "تُشير \"فنون البرمجة\" إلى الجانب الإبداعي والمهاري في كتابة الشفرات البرمجية، حيث لا تقتصر البرمجة على كونها مجرد \"علم\" أو \"هندسة\" تقنية، بل هي فن يتطلب دقة في التصميم وقدرة على حل المشكلات بأساليب مبتكرة. \r\nمؤسسة هنداوي\r\nمؤسسة هنداوي\r\n +1\r\nأبعاد البرمجة كفن\r\nتتعدد الزوايا التي يُنظر من خلالها للبرمجة كعمل فني وإبداعي:\r\nالبرمجة الإبداعية (Creative Coding): نوع من البرمجة يهدف لإنشاء شيء \"معبر\" أو \"جمالي\" بدلاً من الوظيفي الصرف، مثل الفنون البصرية الرقمية والموسيقى المولدة برمجياً.\r\nفن كتابة الكود النظيف: يركز المبرمجون المحترفون على جمالية الكود من الداخل، بحيث يكون مقروءاً، بسيطاً، وسهل الصيانة، وهو ما يُعرف أحياناً بـ \"أناقة الكود\".\r\nتصميم وتطوير الألعاب: يدمج هذا المجال بين الفنون البصرية، الموسيقى، والمنطق البرمجي لخلق تجارب تفاعلية.\r\nفن المبرمج (Programmer Art): مصطلح يُطلق أحياناً على الرسومات المؤقتة التي يصممها المبرمجون أثناء العمل لتعويض غياب المصمم المحترف. \r\nWikipedia\r\nWikipedia\r\n +3\r\nمسارات لتعلم فنون البرمجة\r\nإذا كنت تسعى لاحتراف هذا المجال، تتوفر عدة مسارات وموارد:\r\nتعلم الأساسيات: البدء بلغات مرئية مثل Scratch للأطفال والمبتدئين، أو الانتقال مباشرة لأساسيات Python.\r\nالمصادر الأكاديمية: توجد دبلومات متخصصة في البرمجة والتطبيقات في جامعات مثل جامعة الأميرة نورة وجامعة بيشة.\r\nالدورات العالمية: كورس CS50 من جامعة هارفارد يُعد",
+    "published": "2026-03-26T07:38:39Z",
+    "created": "2026-03-26T07:38:40.001Z",
+    "updated": "2026-03-26T07:49:45.491Z",
+    "status": "PB",
+    "image": "blog/2026/03/26/images.jpeg",
+    "views_count": 3,
+    "likes": [
+      2,
+      5,
+      7
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 8,
+  "fields": {
+    "title": "علوم الارض",
+    "slug": "earth-new",
+    "author": 2,
+    "content": "تُعد علوم الأرض (Geoscience) النافذة التي نطل من خلالها على أسرار الكوكب الذي نعيش عليه. فهي لا تدرس الصخور فحسب، بل تشمل نظاماً متكاملاً يربط بين الغلاف الجوي، والمائي، والحيوي، واليابسة.\r\nإليك نظرة موجزة وشاملة على هذا المجال:\r\n1. ما هي علوم الأرض؟\r\nهي مجموعة العلوم التي تدرس المكونات الفيزيائية للأرض والعمليات التي تشكلها. تنقسم بشكل أساسي إلى أربعة فروع كبرى:\r\nالجيولوجيا: دراسة المواد الصلبة المكونة للأرض (الصخور والمعادن) وتاريخ تشكلها.\r\nالأرصاد الجوية: دراسة الغلاف الجوي والطقس والمناخ.\r\nالمحيطات: دراسة البحار والمحيطات من الناحية الكيميائية والفيزيائية والحيوية.\r\nالفلك: دراسة علاقة الأرض بالأجرام السماوية والكون.\r\n2. لماذا تهمنا دراسة الأرض؟\r\nتؤثر علوم الأرض في تفاصيل حياتنا اليومية بشكل مباشر من خلال:\r\nإدارة الموارد: اكتشاف النفط، والغاز، والمعادن، والمياه الجوفية.\r\nالتنبؤ بالكوارث: فهم الزلازل، والبراكين، والأعاصير للتقليل من آثارها التدميرية.\r\nحماية البيئة: دراسة التغير المناخي وحل مشكلات التلوث.\r\n3. ديناميكية الكوكب\r\nالأرض ليست كوكباً ساكناً؛ فبفضل تكتونية الصفائح، تتحرك القارات وتتشكل الجبال وتنفصل المحيطات عبر ملايين السنين. هذا النشاط الداخلي هو الذي يجعل الأرض كوكباً حياً وفريداً في المجموعة الشمسية.\r\n4. التكنولوجيا وعلوم الأرض\r\nاليوم، يعتمد العلماء على تقنيات متطورة مثل الأقمار الصناعية (الاستشعار عن بُعد) ونظم المعلومات الجغرافية (GIS) لرسم خرائط دقيقة وتحليل التغيرات البيئية بدقة متناهية.\r\nخلاصة القول: علوم الأرض هي الجسر الذي يربط بين فهم الماضي (عبر الأحافير والطبقات الصخرية) وضمان مستقبل مستدام للبشرية عبر حماية موارد الكوكب وتوازن بيئته.\r\nهل ترغب في التعمق في فرع محدد من هذه العلوم، مثل الجيولوجيا أو علم المناخ؟",
+    "published": "2026-03-26T08:56:56Z",
+    "created": "2026-03-26T08:56:56.427Z",
+    "updated": "2026-03-26T08:58:48.934Z",
+    "status": "PB",
+    "image": "blog/2026/03/26/ssw_٢_Xgiz3aW.png",
+    "views_count": 2,
+    "likes": [
+      1,
+      2,
+      5
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 10,
+  "fields": {
+    "title": "انا اجرب الslug",
+    "slug": "انا-اجرب-الslug",
+    "author": 2,
+    "content": "انا اجرب الslugانا اجرب الslugانا اجرب الslugانا اجرب الslug\r\nانا اجرب الslugانا اجرب الslugانا اجرب الslugانا اجرب الslugانا اجرب الslugانا اجرب الslugانا اجرب الslugانا اجرب الslug\r\nانا اجرب الslugانا اجرب الslugانا اجرب الslug\r\nانا اجرب الslugانا اجرب الslugانا اجرب الslugانا اجرب الslug",
+    "published": "2026-03-26T09:29:07Z",
+    "created": "2026-03-26T09:29:07.904Z",
+    "updated": "2026-03-27T06:11:33.263Z",
+    "status": "PB",
+    "image": "blog/2026/03/27/لقطة_الشاشة_١٤٤٧-٠٨-٠٢_في_٧.٠٠.٢٩م.png",
+    "views_count": 3,
+    "likes": [
+      1,
+      2,
+      5
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 11,
+  "fields": {
+    "title": "هلا هلا",
+    "slug": "هلا-هلا",
+    "author": 1,
+    "content": "نتبانشلتيادتنشزبسيد شبز\r\nيبسزص\r\nقزسي\r\nزلصبلزثقلثصبلد\r\nشرق لد\r\n ثقبد\r\nث\r\n\r\nدسصيبزبصققسلزدبيسد",
+    "published": "2026-03-26T09:32:46Z",
+    "created": "2026-03-26T09:32:46.582Z",
+    "updated": "2026-03-27T06:10:44.600Z",
+    "status": "PB",
+    "image": "blog/2026/03/27/المقاومات.png",
+    "views_count": 3,
+    "likes": [
+      1,
+      2,
+      5,
+      7
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 13,
+  "fields": {
+    "title": "تجربة انشاء templatets ags",
+    "slug": "تجربة-انشاء-templatets-ags",
+    "author": 2,
+    "content": "test test test \r\ntemplates tags",
+    "published": "2026-03-27T08:23:49Z",
+    "created": "2026-03-27T08:23:49.459Z",
+    "updated": "2026-03-27T08:25:20.571Z",
+    "status": "PB",
+    "image": "",
+    "views_count": 5,
+    "likes": [
+      1,
+      2,
+      5
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 14,
+  "fields": {
+    "title": "soso",
+    "slug": "soso",
+    "author": 2,
+    "content": "lskdjflkjasdnf;klasdjvc\r\nasdfvajsnkj;vcnakdjsnbckjldsabc\r\nasdfokcjhnasdkljcnkjladsbvljknbfdvhjkbdfs\r\nasdfgnvadfkljnvzxcbsmbjnavjhbdasdofjkn",
+    "published": "2026-03-28T05:36:17Z",
+    "created": "2026-03-28T05:36:17.158Z",
+    "updated": "2026-03-28T05:36:44.247Z",
+    "status": "PB",
+    "image": "blog/2026/03/28/The-JavaScript-Language-P1-thumbnail.thumb.png.736ed136080517b885d9142af47c569a.png",
+    "views_count": 1,
+    "likes": []
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 15,
+  "fields": {
+    "title": "new title",
+    "slug": "new-title",
+    "author": 1,
+    "content": "hellloslkasdf\r\nasdfgadsbdsbzx\r\nzvfsd\r\nbzv\r\nbdsfzxgvc \r\ndab cszvc",
+    "published": "2026-03-28T05:37:49Z",
+    "created": "2026-03-28T05:37:49.799Z",
+    "updated": "2026-03-28T05:38:08.134Z",
+    "status": "PB",
+    "image": "blog/2026/03/28/لقطة_الشاشة_١٤٤٧-٠٧-١٠_في_٨.٢٣.٢٦م.png",
+    "views_count": 4,
+    "likes": [
+      1,
+      5
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 18,
+  "fields": {
+    "title": "sssss",
+    "slug": "sssss",
+    "author": 1,
+    "content": "سسسسسسس",
+    "published": "2026-03-28T11:34:37Z",
+    "created": "2026-03-28T11:34:37.847Z",
+    "updated": "2026-03-28T11:35:23.438Z",
+    "status": "PB",
+    "image": "blog/2026/03/28/images-3.jpeg",
+    "views_count": 5,
+    "likes": [
+      5
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 19,
+  "fields": {
+    "title": "العصر التكنلوجي",
+    "slug": "العصر-التكنلوجي",
+    "author": 2,
+    "content": "لتكنولوجيا الرقمية، هي سلاح ذو حدين في العالم الحديث، حيث تعزز الكفاءة والتواصل بينما تلقي بظلالها على تهديدات الأمن السيبراني ومخاوف الخصوصية. إنها ترسم لوحة تزدهر فيها الكفاءة تحت لمسات الابتكار، ولكن في ظلها تكمن تعقيدات تتحدى مفاهيمنا حول الأمان والحرية الشخصية. يتطلب احتضان إمكانياتها التنقل في مشهد تتراقص فيه التقدم والمخاطر على نحو متداخل، موجهًا مستقبل المجتمعات والاقتصادات على حد سواء.\r\n\r\nمع التغيرات المستمرة التي تطرأ على التكنولوجيا والأسواق والظروف الخارجية، لم يعد أمام المنظمات سوى مواكبة تلك التغيرات، وذلك باعتماد التكنولوجيا بشكل أساسي وتطبيقها على احتياجات المنظمة وقاعدة العملاء واتجاهات الصناعة، وتُعد التكنولوجيا الرقمية من الوسائل التي تستعين بها المنظمات لتحقيق هذا الهدف، وفي هذا المقال نوضح تعريف التكنولوجيا الرقمية وأنواعها وإيجابياتها وسلبياتها وخصائصها وأمثلة عليها.\r\n\r\nتعريف التكنولوجيا الرقمية:\r\nيشير مفهوم التكنولوجيا الرقمية Digital Technology إلى الأجهزة والأدوات والموارد الإلكترونية التي تستعين بها الشركات عندما تقوم بإنشاء البيانات وإدارتها وتخزينها، إذ تفيدها في تحسين كفاءة الموظفين، ومن ثم زيادة إنتاجيتهم، إلى جانب إدارة العمليات وتحسين رحلة العملاء.\r\n\r\nوتتمثل آلية عمل التكنولوجيا الرقمية في تحويل المعلومات إلى تنسيق رقمي، هذا التنسيق القابل للمعالجة والتخزين بسهولة، وذلك باستخدام أجهزة الكمبيوتر والإنترنت والمعالجات الدقيقة.\r\n\r\nوتشمل التكنولوجيا الرقمية تكنولوجيا المعلومات وتكنولوجيا الاتصالات والذكاء الاصطناعي، وبات استخدامها واضحًا في الهواتف الذكية والأجهزة اللوحية، ومن الأمثلة على ذلك المنصات السحابية، مثل Microsoft 365 أو Google Docs، والتي يمكن للمستخدمين استخدامها على الهواتف المحمولة.\r\n\r\nتطور التكنولوجيا الرقمية:\r\nمرت التكنولوجيا الرقمية بالعديد من المراحل حتى وصلت إلى ظهور التقنيات الرقمية التي غيرت من طريقة تبادل المعلومات واستخدامها.\r\n\r\nوكانت البداية في فترة الخمسينيات والستينيات من القرن الماضي، عندما استخدمت العديد من الحكومات والجيوش والمنظمات الأخرى أجهزة الكمبيوتر لإدارة البيانات والوظائف المعقدة.\r\n\r\nوفي عام 1969، تم توصيل أجهزة الكمبيوتر الأولى بالإنترنت في ذلك الوقت، وبفضل تطوير المزيد من البرامج، أصبحت هناك إمكانية تسجيل الدخول عن بُعد ونقل الملفات والبريد الإلكتروني.\r\n\r\nوشهدت فترة الثمانينات تطورًا هائلًا في التكنولوجيا الرقمية، إذ تم استخدام الكمبيوتر في صناعة الروبوتات والموسيقى الإلكترونية وألعاب الفيديو والصور وأجهزة الصراف الآلي، وازداد انتشار أجهزة الكمبيوتر في المنزل، وفي عام 1983 أنشأت شركة موتورولا أول هاتف محمول، تبعها إنشاء أول كاميرا رقمية عام 1988.\r\n\r\nوشهد عام 1989 اختراع الشبكة العالمية على يد تيم بيرنرز لي، والذي صمم مجموعة من القواعد  للاتصال بين الأنظمة، متبوعة بإعداد خادم لتخزين المعلومات وإنشاء برنامج متصفح، والتي أصبحت متاحة للجمهور.\r\n\r\nوبحلول عام 1996 انتشر الإنترنت، بعدما أدركت الشركات الأولى ثم الأفراد إمكانية توسيع قدرات أجهزة الكمبيوتر والأجهزة الرقمية الأخرى عند الاتصال به، ثم زاد استخدامه في جميع أنحاء العالم، وذلك بحلول عام 2005.\r\n\r\nوبحلول عام 2020، تمكن الأفراد على جميع المستويات من استخدام التكنولوجيا بطرق جديدة، والاستفادة من جميع صورها مثل مواقع التواصل الاجتماعي وتطبيقات الويب التي تسمح بالعمل عن بُعد وخدمات الترفيه عند الطلب والتسوق عبر الإنترنت، حتى أعادت هذه الأنظمة تشكيل عمل الحياة اليومية إلى حد كبير.\r\n\r\nأنواع التكنولوجيا الرقمية:\r\nتشمل الأنواع المختلفة من التكنولوجيا الرقمية ما يلي",
+    "published": "2026-03-28T11:36:54Z",
+    "created": "2026-03-28T11:36:54.566Z",
+    "updated": "2026-03-28T20:33:14.728Z",
+    "status": "PB",
+    "image": "blog/2026/03/28/images-5.jpeg",
+    "views_count": 0,
+    "likes": []
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 20,
+  "fields": {
+    "title": "مطار جده",
+    "slug": "مطار-جده",
+    "author": 1,
+    "content": "ابلووووسيد\r\nسيذيسذ\r\nسيذيذ",
+    "published": "2026-03-28T12:00:56Z",
+    "created": "2026-03-28T12:00:56.152Z",
+    "updated": "2026-03-29T08:44:02.956Z",
+    "status": "PB",
+    "image": "blog/2026/03/28/images-3_fM7dkHR.jpeg",
+    "views_count": 1,
+    "likes": [
+      1
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 21,
+  "fields": {
+    "title": "خالد",
+    "slug": "خالد",
+    "author": 1,
+    "content": "خالد خالد خالد \r\nخالد خالد خالد \r\nخالد خالد خالد \r\nخالد خالد خالد خالد خالد خالد دخالد خالد خالد خالد خالد خالد دخالد خالد خالد خالد خالد خالد خالد خالد خالد خالد خالد خالد خالد خالد خالد \r\nخالد خالد خالد د",
+    "published": "2026-03-28T20:31:01Z",
+    "created": "2026-03-28T20:31:02.041Z",
+    "updated": "2026-03-28T20:33:46.353Z",
+    "status": "PB",
+    "image": "blog/2026/03/28/images-2.jpeg",
+    "views_count": 3,
+    "likes": [
+      1
+    ]
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 22,
+  "fields": {
+    "title": "السلام عليكم",
+    "slug": "السلام-عليكم",
+    "author": 1,
+    "content": "السلام عليكم",
+    "published": "2026-03-29T08:49:16Z",
+    "created": "2026-03-29T08:49:16.326Z",
+    "updated": "2026-03-29T08:49:45.982Z",
+    "status": "PB",
+    "image": "blog/2026/03/29/WhatsApp_Image_1447-07-19_at_16.53.46.jpeg",
+    "views_count": 5,
+    "likes": [
+      1
+    ]
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 1,
+  "fields": {
+    "post": 4,
+    "author": 1,
+    "body": "mnvjhvhj",
+    "created": "2026-03-25T11:35:09.763Z",
+    "updated": "2026-03-25T12:15:33.544Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 2,
+  "fields": {
+    "post": 4,
+    "author": 1,
+    "body": "اهلا وسهلا",
+    "created": "2026-03-25T11:45:20.740Z",
+    "updated": "2026-03-25T12:12:17.417Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 3,
+  "fields": {
+    "post": 3,
+    "author": 1,
+    "body": "احلى لغة",
+    "created": "2026-03-25T11:45:49.457Z",
+    "updated": "2026-03-25T12:12:58.533Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 4,
+  "fields": {
+    "post": 3,
+    "author": 1,
+    "body": "تالدالد\r\nنتادزتادتاد",
+    "created": "2026-03-25T11:53:20.526Z",
+    "updated": "2026-03-25T12:12:58.537Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 5,
+  "fields": {
+    "post": 4,
+    "author": 1,
+    "body": "اهلا بكم هنا معنا",
+    "created": "2026-03-25T11:54:19.427Z",
+    "updated": "2026-03-25T12:12:17.424Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 6,
+  "fields": {
+    "post": 1,
+    "author": 1,
+    "body": "hjgfhgf ي",
+    "created": "2026-03-25T11:56:59.491Z",
+    "updated": "2026-03-25T12:16:19.151Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 7,
+  "fields": {
+    "post": 4,
+    "author": 1,
+    "body": "ههههههه",
+    "created": "2026-03-25T12:03:36.727Z",
+    "updated": "2026-03-25T12:03:36.727Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 8,
+  "fields": {
+    "post": 1,
+    "author": 1,
+    "body": "نغزات",
+    "created": "2026-03-25T12:03:50.909Z",
+    "updated": "2026-03-25T12:03:50.909Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 9,
+  "fields": {
+    "post": 4,
+    "author": 1,
+    "body": "تالتالد",
+    "created": "2026-03-25T12:04:13.180Z",
+    "updated": "2026-03-25T12:04:13.180Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 10,
+  "fields": {
+    "post": 2,
+    "author": 1,
+    "body": "iiiiiii",
+    "created": "2026-03-25T12:08:31.224Z",
+    "updated": "2026-03-25T12:08:31.224Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 11,
+  "fields": {
+    "post": 2,
+    "author": 1,
+    "body": "*‏﮼هههههههههههههههههههههههههههههههههههههههههههههههااااي*🤣",
+    "created": "2026-03-25T12:10:25.256Z",
+    "updated": "2026-03-25T12:11:08.919Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 12,
+  "fields": {
+    "post": 4,
+    "author": 1,
+    "body": "شكرا",
+    "created": "2026-03-25T12:19:04.270Z",
+    "updated": "2026-03-25T12:19:04.270Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 13,
+  "fields": {
+    "post": 4,
+    "author": 1,
+    "body": "نايس",
+    "created": "2026-03-25T12:19:54.846Z",
+    "updated": "2026-03-25T12:19:54.846Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 14,
+  "fields": {
+    "post": 1,
+    "author": 1,
+    "body": "مرحبا",
+    "created": "2026-03-25T12:21:35.161Z",
+    "updated": "2026-03-25T13:07:31.076Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 15,
+  "fields": {
+    "post": 3,
+    "author": 1,
+    "body": "*‏﮼هههههههههههههههههههههههههههههههههههههههههههههههااااي*🤣",
+    "created": "2026-03-25T12:22:05.778Z",
+    "updated": "2026-03-25T13:07:31.081Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 16,
+  "fields": {
+    "post": 4,
+    "author": 1,
+    "body": "مارتن",
+    "created": "2026-03-25T13:06:55.641Z",
+    "updated": "2026-03-25T13:07:31.083Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 17,
+  "fields": {
+    "post": 3,
+    "author": 1,
+    "body": "،وزر\r\n،منر\r\nكنرمنرمنر\r\nكنرومنرمنر\r\nكنرمنرمرمترمت\r\nكرمنرمنرمنرزمترمتنزر\r\nكمنرمنرمنترمنرمنرمنر\r\nمتزرنمتزمنتزنمتزنتزنتز نترزنتز\r\n\\متزمعابدنغفيعديقنعم شغف ع هع ا\r\nك عل عمل هكعلمعغل مشغل مشغل هع لكهل ؛\r\n\r\n هامهعلا همعلعغل مهعلكهعلهمعاله عاهعاهعلتملا \\\r\n\r\n\r\n \r\nخهامهعاهعلمهلهعلمهعلعغل معهغل كهعالكمغبلمعغل معغل معغل علغ",
+    "created": "2026-03-25T13:27:14.719Z",
+    "updated": "2026-03-25T13:27:51.631Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 18,
+  "fields": {
+    "post": 1,
+    "author": 1,
+    "body": "ياسلام",
+    "created": "2026-03-25T13:50:21.560Z",
+    "updated": "2026-03-25T13:50:21.560Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 19,
+  "fields": {
+    "post": 1,
+    "author": 1,
+    "body": "*‏﮼هههههههههههههههههههههههههههههههههههههههههههههههااااي*🤣",
+    "created": "2026-03-25T13:51:32.243Z",
+    "updated": "2026-03-25T13:51:32.243Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 20,
+  "fields": {
+    "post": 4,
+    "author": 1,
+    "body": "هاااي",
+    "created": "2026-03-25T14:28:04.084Z",
+    "updated": "2026-03-25T14:28:04.084Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 21,
+  "fields": {
+    "post": 4,
+    "author": 1,
+    "body": "كذا تمام",
+    "created": "2026-03-25T14:29:14.017Z",
+    "updated": "2026-03-25T14:29:14.017Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 22,
+  "fields": {
+    "post": 4,
+    "author": 1,
+    "body": "نتزنتزر",
+    "created": "2026-03-25T14:31:55.487Z",
+    "updated": "2026-03-25T14:31:55.487Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 23,
+  "fields": {
+    "post": 2,
+    "author": 1,
+    "body": "كويس جداً",
+    "created": "2026-03-25T14:46:48.165Z",
+    "updated": "2026-03-25T14:46:48.165Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 24,
+  "fields": {
+    "post": 2,
+    "author": 1,
+    "body": "ههههه",
+    "created": "2026-03-25T14:47:12.981Z",
+    "updated": "2026-03-25T14:47:12.981Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 25,
+  "fields": {
+    "post": 2,
+    "author": 1,
+    "body": "،ورزور،",
+    "created": "2026-03-25T14:50:43.785Z",
+    "updated": "2026-03-25T14:50:43.785Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 26,
+  "fields": {
+    "post": 2,
+    "author": 1,
+    "body": "،تزرنترزتن",
+    "created": "2026-03-25T14:51:46.368Z",
+    "updated": "2026-03-25T14:51:46.368Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 27,
+  "fields": {
+    "post": 2,
+    "author": 1,
+    "body": "kjbkjbkhj",
+    "created": "2026-03-25T14:52:58.602Z",
+    "updated": "2026-03-25T14:52:58.602Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 28,
+  "fields": {
+    "post": 2,
+    "author": 1,
+    "body": "hohohohohoh",
+    "created": "2026-03-25T14:53:29.903Z",
+    "updated": "2026-03-25T14:53:29.903Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 29,
+  "fields": {
+    "post": 4,
+    "author": 1,
+    "body": "منا",
+    "created": "2026-03-25T16:17:01.111Z",
+    "updated": "2026-03-25T16:17:01.111Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 30,
+  "fields": {
+    "post": 2,
+    "author": 1,
+    "body": "لا تضحك",
+    "created": "2026-03-26T05:50:42.211Z",
+    "updated": "2026-03-26T05:50:42.211Z",
+    "active": true,
+    "parent": 11
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 31,
+  "fields": {
+    "post": 2,
+    "author": 1,
+    "body": "ليه",
+    "created": "2026-03-26T05:54:15.041Z",
+    "updated": "2026-03-26T05:54:15.041Z",
+    "active": true,
+    "parent": 11
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 32,
+  "fields": {
+    "post": 2,
+    "author": 1,
+    "body": "طيب كذا تمام",
+    "created": "2026-03-26T05:55:24.454Z",
+    "updated": "2026-03-26T05:55:24.454Z",
+    "active": true,
+    "parent": 11
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 33,
+  "fields": {
+    "post": 2,
+    "author": 1,
+    "body": "بجرب الان واشوف",
+    "created": "2026-03-26T05:57:24.850Z",
+    "updated": "2026-03-26T05:57:24.850Z",
+    "active": true,
+    "parent": 11
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 34,
+  "fields": {
+    "post": 2,
+    "author": 1,
+    "body": "لا",
+    "created": "2026-03-26T05:58:36.262Z",
+    "updated": "2026-03-26T05:58:36.262Z",
+    "active": true,
+    "parent": 23
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 35,
+  "fields": {
+    "post": 2,
+    "author": 1,
+    "body": "فدام",
+    "created": "2026-03-26T05:59:36.491Z",
+    "updated": "2026-03-26T05:59:36.491Z",
+    "active": true,
+    "parent": 28
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 36,
+  "fields": {
+    "post": 4,
+    "author": 1,
+    "body": "kjbjhb",
+    "created": "2026-03-26T07:06:12.948Z",
+    "updated": "2026-03-26T07:06:12.949Z",
+    "active": true,
+    "parent": 29
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 37,
+  "fields": {
+    "post": 2,
+    "author": 5,
+    "body": "ههههههههه",
+    "created": "2026-03-26T07:11:08.883Z",
+    "updated": "2026-03-26T07:11:08.883Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 38,
+  "fields": {
+    "post": 2,
+    "author": 1,
+    "body": "سلامات",
+    "created": "2026-03-26T07:11:35.747Z",
+    "updated": "2026-03-26T07:11:35.747Z",
+    "active": true,
+    "parent": 37
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 39,
+  "fields": {
+    "post": 2,
+    "author": 5,
+    "body": "goood",
+    "created": "2026-03-26T07:19:36.143Z",
+    "updated": "2026-03-26T07:19:36.143Z",
+    "active": true,
+    "parent": 37
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 40,
+  "fields": {
+    "post": 8,
+    "author": 5,
+    "body": "*‏﮼هههههههههههههههههههههههههههههههههههههههههههههههااااي*🤣",
+    "created": "2026-03-26T09:02:37.340Z",
+    "updated": "2026-03-26T09:02:37.340Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 41,
+  "fields": {
+    "post": 8,
+    "author": 2,
+    "body": "ليه تضحك",
+    "created": "2026-03-26T09:03:30.259Z",
+    "updated": "2026-03-26T09:03:30.259Z",
+    "active": true,
+    "parent": 40
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 42,
+  "fields": {
+    "post": 8,
+    "author": 5,
+    "body": "بكيفي",
+    "created": "2026-03-26T09:04:36.395Z",
+    "updated": "2026-03-26T09:04:36.395Z",
+    "active": true,
+    "parent": 40
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 43,
+  "fields": {
+    "post": 8,
+    "author": 5,
+    "body": "hggjhgh",
+    "created": "2026-03-26T09:11:41.979Z",
+    "updated": "2026-03-26T09:11:41.979Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 44,
+  "fields": {
+    "post": 1,
+    "author": 1,
+    "body": "kjjhgv",
+    "created": "2026-03-27T08:53:09.385Z",
+    "updated": "2026-03-27T08:53:09.385Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 45,
+  "fields": {
+    "post": 1,
+    "author": 1,
+    "body": "ههههههه نايس",
+    "created": "2026-03-27T10:02:00.055Z",
+    "updated": "2026-03-27T10:02:00.055Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 46,
+  "fields": {
+    "post": 10,
+    "author": 1,
+    "body": "iiiii",
+    "created": "2026-03-27T13:48:32.531Z",
+    "updated": "2026-03-27T13:48:32.531Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 47,
+  "fields": {
+    "post": 13,
+    "author": 5,
+    "body": "كويس",
+    "created": "2026-03-27T14:35:02.089Z",
+    "updated": "2026-03-27T14:35:02.089Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 48,
+  "fields": {
+    "post": 13,
+    "author": 1,
+    "body": "اكيد",
+    "created": "2026-03-27T14:35:22.979Z",
+    "updated": "2026-03-27T14:35:22.979Z",
+    "active": true,
+    "parent": 47
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 49,
+  "fields": {
+    "post": 13,
+    "author": 5,
+    "body": "هلا هلا",
+    "created": "2026-03-27T14:35:40.555Z",
+    "updated": "2026-03-27T14:35:40.555Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 50,
+  "fields": {
+    "post": 13,
+    "author": 1,
+    "body": "االلاالللل",
+    "created": "2026-03-27T14:35:50.321Z",
+    "updated": "2026-03-27T14:35:50.321Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 51,
+  "fields": {
+    "post": 13,
+    "author": 5,
+    "body": "قووود",
+    "created": "2026-03-27T14:35:58.855Z",
+    "updated": "2026-03-27T14:35:58.855Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 52,
+  "fields": {
+    "post": 13,
+    "author": 1,
+    "body": "نايس",
+    "created": "2026-03-27T14:36:06.966Z",
+    "updated": "2026-03-27T14:36:06.966Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 53,
+  "fields": {
+    "post": 13,
+    "author": 5,
+    "body": "تازدتادتالد",
+    "created": "2026-03-27T14:36:19.054Z",
+    "updated": "2026-03-27T14:36:19.054Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 54,
+  "fields": {
+    "post": 13,
+    "author": 1,
+    "body": "طيب",
+    "created": "2026-03-27T14:36:36.229Z",
+    "updated": "2026-03-27T14:36:36.229Z",
+    "active": true,
+    "parent": 53
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 55,
+  "fields": {
+    "post": 13,
+    "author": 5,
+    "body": "وزتازات",
+    "created": "2026-03-27T14:37:44.148Z",
+    "updated": "2026-03-27T14:37:44.148Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 56,
+  "fields": {
+    "post": 13,
+    "author": 1,
+    "body": "تزتابدنالبذبتذ",
+    "created": "2026-03-27T14:37:58.981Z",
+    "updated": "2026-03-27T14:37:58.981Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 57,
+  "fields": {
+    "post": 13,
+    "author": 1,
+    "body": "تتازدتدتلابد",
+    "created": "2026-03-27T14:38:08.566Z",
+    "updated": "2026-03-27T14:38:08.566Z",
+    "active": true,
+    "parent": 56
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 58,
+  "fields": {
+    "post": 13,
+    "author": 1,
+    "body": "ورزدر،د،زدوادذل",
+    "created": "2026-03-27T14:38:18.038Z",
+    "updated": "2026-03-27T14:38:18.038Z",
+    "active": true,
+    "parent": 55
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 59,
+  "fields": {
+    "post": 13,
+    "author": 5,
+    "body": "وزد،تادالذ",
+    "created": "2026-03-27T14:38:31.704Z",
+    "updated": "2026-03-27T14:38:31.704Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 60,
+  "fields": {
+    "post": 13,
+    "author": 5,
+    "body": "وداوذلذلبطبيط",
+    "created": "2026-03-27T14:38:39.037Z",
+    "updated": "2026-03-27T14:38:39.037Z",
+    "active": true,
+    "parent": 59
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 61,
+  "fields": {
+    "post": 13,
+    "author": 5,
+    "body": "وزد،تالدتلبذتلبذطبيل",
+    "created": "2026-03-27T14:38:44.321Z",
+    "updated": "2026-03-27T14:38:44.321Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 62,
+  "fields": {
+    "post": 11,
+    "author": 7,
+    "body": "واو رائع نظام الاشعارات",
+    "created": "2026-03-28T01:35:25.513Z",
+    "updated": "2026-03-28T01:35:25.513Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 63,
+  "fields": {
+    "post": 5,
+    "author": 7,
+    "body": "مرحبااااا",
+    "created": "2026-03-28T01:53:55.993Z",
+    "updated": "2026-03-28T01:53:55.993Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 64,
+  "fields": {
+    "post": 10,
+    "author": 1,
+    "body": "هههههه",
+    "created": "2026-03-28T02:18:01.941Z",
+    "updated": "2026-03-28T02:18:01.941Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 65,
+  "fields": {
+    "post": 11,
+    "author": 1,
+    "body": "شكرا",
+    "created": "2026-03-28T02:18:34.319Z",
+    "updated": "2026-03-28T02:18:34.319Z",
+    "active": true,
+    "parent": 62
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 66,
+  "fields": {
+    "post": 11,
+    "author": 1,
+    "body": "العفوو",
+    "created": "2026-03-28T02:28:18.749Z",
+    "updated": "2026-03-28T02:28:18.749Z",
+    "active": true,
+    "parent": 62
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 67,
+  "fields": {
+    "post": 13,
+    "author": 1,
+    "body": "اهلين",
+    "created": "2026-03-28T02:28:49.755Z",
+    "updated": "2026-03-28T02:28:49.755Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 68,
+  "fields": {
+    "post": 10,
+    "author": 1,
+    "body": "الواو وينك",
+    "created": "2026-03-28T03:21:24.034Z",
+    "updated": "2026-03-28T03:21:24.034Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 69,
+  "fields": {
+    "post": 18,
+    "author": 5,
+    "body": "مقال حلو",
+    "created": "2026-03-28T11:39:36.975Z",
+    "updated": "2026-03-28T11:39:36.975Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 70,
+  "fields": {
+    "post": 18,
+    "author": 1,
+    "body": "شكرا",
+    "created": "2026-03-28T11:40:23.964Z",
+    "updated": "2026-03-28T11:40:23.964Z",
+    "active": true,
+    "parent": 69
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 71,
+  "fields": {
+    "post": 2,
+    "author": 8,
+    "body": "مقابلة رائعة",
+    "created": "2026-03-28T20:26:07.109Z",
+    "updated": "2026-03-28T20:26:07.109Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 72,
+  "fields": {
+    "post": 22,
+    "author": 1,
+    "body": "igmmm",
+    "created": "2026-03-29T18:47:47.261Z",
+    "updated": "2026-03-29T18:47:47.261Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 73,
+  "fields": {
+    "post": 22,
+    "author": 1,
+    "body": "iiiii",
+    "created": "2026-03-29T18:47:57.638Z",
+    "updated": "2026-03-29T18:47:57.638Z",
+    "active": true,
+    "parent": 72
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 74,
+  "fields": {
+    "post": 22,
+    "author": 2,
+    "body": "jhgu",
+    "created": "2026-03-29T18:48:33.178Z",
+    "updated": "2026-03-29T18:48:33.178Z",
+    "active": true,
+    "parent": null
+  }
+},
+{
+  "model": "blog.notification",
+  "pk": 1,
+  "fields": {
+    "recipient": 1,
+    "sender": 7,
+    "post": 11,
+    "notification_type": "comment",
+    "text": "قام dodo بالتعليق على مقالك: هلا هلا",
+    "is_read": true,
+    "created_at": "2026-03-28T01:35:25.518Z"
+  }
+},
+{
+  "model": "blog.notification",
+  "pk": 2,
+  "fields": {
+    "recipient": 1,
+    "sender": 7,
+    "post": 5,
+    "notification_type": "comment",
+    "text": "قام dodo بالتعليق على مقالك: تعلم فنون البرمجة",
+    "is_read": true,
+    "created_at": "2026-03-28T01:53:55.998Z"
+  }
+},
+{
+  "model": "blog.notification",
+  "pk": 3,
+  "fields": {
+    "recipient": 2,
+    "sender": 1,
+    "post": 10,
+    "notification_type": "comment",
+    "text": "قام soso بالتعليق على مقالك: انا اجرب الslug",
+    "is_read": true,
+    "created_at": "2026-03-28T02:18:01.945Z"
+  }
+},
+{
+  "model": "blog.notification",
+  "pk": 4,
+  "fields": {
+    "recipient": 2,
+    "sender": 1,
+    "post": 13,
+    "notification_type": "comment",
+    "text": "قام soso بالتعليق على مقالك: تجربة انشاء templatets ags",
+    "is_read": true,
+    "created_at": "2026-03-28T02:28:49.761Z"
+  }
+},
+{
+  "model": "blog.notification",
+  "pk": 5,
+  "fields": {
+    "recipient": 2,
+    "sender": 1,
+    "post": 10,
+    "notification_type": "comment",
+    "text": "قام soso بالتعليق على مقالك: انا اجرب الslug",
+    "is_read": true,
+    "created_at": "2026-03-28T03:21:24.040Z"
+  }
+},
+{
+  "model": "blog.notification",
+  "pk": 6,
+  "fields": {
+    "recipient": 1,
+    "sender": 5,
+    "post": 18,
+    "notification_type": "comment",
+    "text": "قام lolo بالتعليق على مقالك: sssss",
+    "is_read": true,
+    "created_at": "2026-03-28T11:39:36.979Z"
+  }
+},
+{
+  "model": "blog.notification",
+  "pk": 7,
+  "fields": {
+    "recipient": 1,
+    "sender": 8,
+    "post": 2,
+    "notification_type": "comment",
+    "text": "قام khalid بالتعليق على مقالك: Post sultan almalki",
+    "is_read": true,
+    "created_at": "2026-03-28T20:26:07.112Z"
+  }
+},
+{
+  "model": "blog.notification",
+  "pk": 8,
+  "fields": {
+    "recipient": 1,
+    "sender": 2,
+    "post": 22,
+    "notification_type": "comment",
+    "text": "قام koko بالتعليق على مقالك: السلام عليكم",
+    "is_read": true,
+    "created_at": "2026-03-29T18:48:33.183Z"
+  }
+}
+]

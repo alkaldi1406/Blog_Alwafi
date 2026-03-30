@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% block content %}
+
+<style>
+    .profile-card { border: none; border-radius: 20px; overflow: hidden; background: #fff; }
+    .profile-header { background: linear-gradient(135deg, #0d6efd 0%, #0047ab 100%); padding: 40px 20px; }
+    .profile-img { width: 130px; height: 130px; object-fit: cover; border: 5px solid #fff; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+
+    /* تنسيق الحقول لتكون كبسولات */
+    .form-control-custom { border-radius: 50px; padding: 12px 20px; border: 1px solid #dee2e6; transition: 0.3s; background: #fcfcfc; }
+    .form-control-custom:focus { border-color: #0d6efd; box-shadow: 0 0 10px rgba(13,110,253,0.1); background: #fff; outline: none; }
+
+    .bio-textarea { border-radius: 20px !important; resize: none; }
+
+    label { font-weight: 700; color: #444; margin-bottom: 8px; display: block; padding-right: 10px; }
+    .help-text { font-size: 0.75rem; color: #999; margin-top: 5px; padding-right: 15px; }
+</style>
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-7 col-lg-6">
+            <div class="profile-card shadow-lg">
+                <!-- الهيدر مع الصورة -->
+                <div class="profile-header text-center">
+                    <img src="{{ user.profile.image.url }}" class="rounded-circle profile-img mb-3">
+                    <h3 class="text-white fw-bold mb-1">{{ user.username }}</h3>
+                    <p class="text-white-50 small mb-0">{{ user.email }}</p>
+                </div>
+
+                <div class="card-body p-4 p-md-5">
+                    <form method="POST" enctype="multipart/form-data">
+                        {% csrf_token %}
+
+                        <!-- قسم المعلومات الأساسية -->
+                        <h5 class="text-primary fw-bold mb-4 border-bottom pb-2">
+                            <i class="bi bi-person-lines-fill me-2"></i> المعلومات الأساسية
+                        </h5>
+
+                        <div class="mb-3">
+                            <label>اسم المستخدم</label>
+                            <input type="text" name="username" value="{{ u_form.username.value }}" class="form-control-custom w-100">
+                            <div class="help-text">مطلوب 150 حرفاً أو أقل.</div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label>البريد الإلكتروني</label>
+                            <input type="email" name="email" value="{{ u_form.email.value }}" class="form-control-custom w-100">
+                        </div>
+
+                        <!-- قسم الصورة والنبذة -->
+                        <h5 class="text-primary fw-bold mt-5 mb-4 border-bottom pb-2">
+                            <i class="bi bi-camera-fill me-2"></i> تحديث الصورة والنبذة
+                        </h5>
+
+                        <div class="mb-4">
+                            <label>تغيير الصورة الشخصية</label>
+                            <input type="file" name="image" class="form-control form-control-sm rounded-pill">
+                            <div class="mt-2 small text-muted">الحالية: <a href="{{ user.profile.image.url }}" target="_blank" class="text-decoration-none">معاينة الصورة</a></div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label>النبذة الشخصية (Bio)</label>
+                            <textarea name="bio" class="form-control-custom bio-textarea w-100" rows="4" placeholder="اكتب شيئاً عن نفسك...">{{ p_form.bio.value }}</textarea>
+                        </div>
+
+                        <div class="text-center mt-5">
+                            <button type="submit" class="btn btn-primary rounded-pill px-5 py-3 fw-bold shadow-sm hover-elevate w-100">
+                                حفظ التغييرات <i class="bi bi-check-circle ms-2"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container py-5">
+    <!-- هيدر البروفايل العلوي -->
+    <div class="row justify-content-center mb-5">
+        <div class="col-md-8 text-center p-5 bg-white rounded-5 shadow-sm border-0">
+            <img src="{{ author.profile.image.url }}" class="rounded-circle border border-4 border-primary-subtle shadow mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+            <h2 class="fw-bold text-dark mb-2">{{ author.username }} <i class="bi bi-patch-check-fill text-primary small"></i></h2>
+            <p class="text-muted mx-auto" style="max-width: 600px;">
+                {{ author.profile.bio|default:"كاتب مبدع في مدونة الوافي يشاركنا شغفه ومعرفته." }}
+            </p>
+            <div class="badge bg-primary-subtle text-primary rounded-pill px-3 py-2">
+                إجمالي المقالات: {{ posts.count }}
+            </div>
+        </div>
+    </div>
+
+    <!-- عرض مقالات هذا الكاتب -->
+    <h4 class="fw-bold mb-4 text-primary">أحدث مقالات {{ author.username }}:</h4>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        {% for post in posts %}
+            {% include "blog/post_card_snippet.html" %} <!-- سنستخدم سنيبت البطاقة لتجنب التكرار -->
+        {% empty %}
+            <p class="text-center text-muted w-100 py-5">لا توجد مقالات منشورة لهذا الكاتب حالياً.</p>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

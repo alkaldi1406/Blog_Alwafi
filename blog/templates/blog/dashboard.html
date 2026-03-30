@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load blog_tags %}
+
+{% block content %}
+<div class="container py-5">
+    <!-- 1. شريط إحصائيات سريعة (اختياري) -->
+    <div class="row mb-5 text-center">
+        <div class="col-12">
+            <h6 class="text-muted mb-3 small fw-bold text-uppercase">نظرة عامة على نشاطك</h6>
+            <div class="d-flex flex-wrap justify-content-center gap-2">
+                <span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-2 border border-primary-subtle shadow-sm">
+                    إجمالي المقالات: {{ user_posts.count }}
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. رأس لوحة التحكم -->
+    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
+        <div>
+            <h2 class="fw-bold text-dark mb-0"><i class="bi bi-speedometer2 text-primary me-2"></i> لوحة تحكم الكاتب</h2>
+            <p class="text-muted small mb-0">مرحباً بك يا <strong>{{ user.username }}</strong>، أدر مقالاتك بكل سهولة.</p>
+        </div>
+        <a href="{% url 'blog:post_create' %}" class="btn btn-primary rounded-pill px-4 py-2 fw-bold shadow-sm">
+            <i class="bi bi-plus-lg me-1"></i> كتابة مقال جديد
+        </a>
+    </div>
+
+    <!-- 3. شبكة المقالات (The Grid) -->
+    <div class="row g-4">
+        {% for post in user_posts %}
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden bg-white dashboard-card">
+
+                    <!-- صورة المقال مع شارة الحالة -->
+                    <div class="position-relative">
+                        {% if post.image %}
+                            <img src="{{ post.image.url }}" class="card-img-top" style="height: 180px; object-fit: cover;">
+                        {% else %}
+                            <div class="bg-light d-flex align-items-center justify-content-center" style="height: 180px;">
+                                <i class="bi bi-image text-muted fs-1"></i>
+                            </div>
+                        {% endif %}
+
+                        <span class="position-absolute top-0 start-0 m-3 badge rounded-pill {% if post.status == 'PB' %}bg-success shadow-sm{% else %}bg-warning text-dark shadow-sm{% endif %}">
+                            {% if post.status == 'PB' %}منشور{% else %}مسودة{% endif %}
+                        </span>
+                    </div>
+
+                    <div class="card-body p-4 d-flex flex-column">
+                        <h5 class="card-title fw-bold text-dark mb-2 text-truncate" title="{{ post.title }}">
+                            {{ post.title }}
+                        </h5>
+                        <p class="text-muted small mb-3">
+                            <i class="bi bi-calendar3 me-1"></i> {{ post.created|date:"d M Y" }}
+                        </p>
+
+                        <!-- إحصائيات التفاعل -->
+                        <div class="d-flex gap-3 mb-4 mt-2 border-top pt-3">
+                            <span class="small text-danger fw-bold"><i class="bi bi-heart-fill"></i> {{ post.total_likes }}</span>
+                            <span class="small text-primary fw-bold"><i class="bi bi-eye-fill"></i> {{ post.views_count }}</span>
+                            <!-- بدلاً من post.comments.count -->
+                            <span class="small text-secondary fw-bold">
+                                <i class="bi bi-chat-left-text-fill"></i> {{ post.total_comments_count }}
+                            </span>
+
+                        </div>
+
+                        <!-- أزرار التحكم -->
+                        <div class="d-flex gap-2 mt-auto">
+                            <a href="{{ post.get_absolute_url }}" class="btn btn-sm btn-outline-primary rounded-pill flex-fill fw-bold">عرض</a>
+                            <a href="{% url 'blog:post_edit' post.id %}" class="btn btn-sm btn-outline-warning rounded-pill flex-fill fw-bold text-dark text-decoration-none text-center">تعديل</a>
+                            <a href="{% url 'blog:post_delete' post.id %}" class="btn btn-sm btn-outline-danger rounded-pill px-3"><i class="bi bi-trash"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% empty %}
+            <!-- حالة "لا توجد مقالات" -->
+            <div class="col-12 text-center py-5">
+                <div class="bg-white p-5 rounded-5 shadow-sm border border-light shadow-sm">
+                    <div class="mb-4">
+                        <i class="bi bi-journal-x text-muted opacity-25" style="font-size: 5rem;"></i>
+                    </div>
+                    <h3 class="fw-bold text-dark">لم تنشر أي مقالات بعد!</h3>
+                    <p class="text-muted mb-4 lead">ابدأ بمشاركة أفكارك التقنية مع العالم اليوم.</p>
+                    <a href="{% url 'blog:post_create' %}" class="btn btn-primary rounded-pill px-5 py-3 fw-bold shadow">
+                        ابدأ كتابة مقالك الأول <i class="bi bi-magic ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

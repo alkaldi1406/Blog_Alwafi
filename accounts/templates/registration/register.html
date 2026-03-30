@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block content %}
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-7 col-lg-6">
+            <div class="card border-0 shadow-lg rounded-5 overflow-hidden">
+                <div class="card-header bg-success text-white p-4 text-center border-0">
+                    <h3 class="mb-0 fw-bold"><i class="bi bi-person-plus-fill me-2"></i>{% trans 'Register' %}</h3>
+                    <p class="small mb-0 opacity-75">انضم لعائلة مدونة الوافي اليوم</p>
+                </div>
+                <div class="card-body p-4 p-md-5 bg-white">
+                    <form method="POST" enctype="multipart/form-data" id="register-form">
+                        {% csrf_token %}
+
+                        <!-- الحقول التلقائية (تتم معالجتها بالجافا سكريبت بالأسفل) -->
+                        <div class="mb-4 registration-fields">
+                            {% include 'common/form.html' with form=form %}
+                        </div>
+
+                        <div class="d-grid gap-2 mt-5">
+                            <button class="btn btn-success rounded-pill fw-bold py-3 shadow-sm hover-elevate">
+                                {% trans 'Register' %} <i class="bi bi-arrow-left-short ms-2 fs-5"></i>
+                            </button>
+                        </div>
+
+                        <div class="text-center mt-4 border-top pt-3">
+                            <p class="small text-muted">لديك حساب بالفعل؟
+                                <a href="{% url 'login' %}" class="text-decoration-none fw-bold text-success hover-underline">تسجيل الدخول</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // البحث عن كل حقول الباسوورد (الأول وتأكيد الثاني)
+        const passwordInputs = document.querySelectorAll('input[type="password"]');
+
+        passwordInputs.forEach((input, index) => {
+            // 1. تغليف الحقل داخل Input Group بتنسيق كبسولي
+            const wrapper = document.createElement('div');
+            wrapper.className = 'input-group mb-4';
+            input.parentNode.insertBefore(wrapper, input);
+            wrapper.appendChild(input);
+
+            // 2. إضافة زر العين
+            const eyeBtn = document.createElement('span');
+            eyeBtn.className = 'input-group-text bg-white border-start-0 cursor-pointer rounded-end-pill px-3';
+            const uniqueIconId = `toggleIcon-${index}`;
+            eyeBtn.innerHTML = `<i class="bi bi-eye-slash text-muted" id="${uniqueIconId}"></i>`;
+            eyeBtn.style.cursor = 'pointer';
+            wrapper.appendChild(eyeBtn);
+
+            // 3. تنسيق الحقل
+            input.classList.add('border-end-0', 'rounded-start-pill', 'py-2');
+            input.placeholder = index === 0 ? "اختر كلمة سر قوية" : "أعد كتابة كلمة السر";
+
+            // 4. وظيفة التبديل لكل عين على حدة
+            eyeBtn.addEventListener('click', function() {
+                const icon = document.getElementById(uniqueIconId);
+                if (input.type === 'password') {
+                    input.type = 'text';
+                    icon.classList.replace('bi-eye-slash', 'bi-eye');
+                    icon.classList.add('text-success'); // تلوينها أخضر لأننا في التسجيل
+                } else {
+                    input.type = 'password';
+                    icon.classList.replace('bi-eye', 'bi-eye-slash');
+                    icon.classList.remove('text-success');
+                }
+            });
+        });
+    });
+</script>
+
+<style>
+    .hover-elevate { transition: all 0.3s ease; }
+    .hover-elevate:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(25, 135, 84, 0.2) !important; }
+    .hover-underline:hover { text-decoration: underline !important; }
+    .form-control:focus { box-shadow: none !important; border-color: #198754 !important; }
+    .input-group-text { border-color: #dee2e6; }
+</style>
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+<h1>shear a post</h1>
+{% block content %}
+
+<div class="container">
+    <div class="card share-card p-4">
+        {% if sent %}
+            <div class="text-center py-4">
+                <div class="display-1 text-success mb-3">✓</div>
+                <h2 class="fw-bold">تم الإرسال بنجاح!</h2>
+                <p class="text-muted">تمت مشاركة المقال <strong>"{{ post.title }}"</strong> مع صديقك.</p>
+                <a href="{{ post.get_absolute_url }}" class="btn btn-outline-primary mt-3">العودة للمقال</a>
+            </div>
+        {% else %}
+            <h3 class="mb-4 text-center">شارك هذا المقال عبر البريد</h3>
+            <p class="text-muted text-center mb-4">أخبر أصدقاءك عن: <strong>{{ post.title }}</strong></p>
+
+            <form method="post" class="needs-validation">
+                {% csrf_token %}
+
+                <!-- عرض حقول الفورم بتنسيق Bootstrap -->
+                {% for field in form %}
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">{{ field.label }}</label>
+                        {{ field }} <!-- جانجو سيضع الحقل هنا -->
+                        {% if field.help_text %}
+                            <div class="form-text">{{ field.help_text }}</div>
+                        {% endif %}
+                        {% for error in field.errors %}
+                            <div class="text-danger small">{{ error }}</div>
+                        {% endfor %}
+                    </div>
+                {% endfor %}
+
+                <div class="d-grid mt-4">
+                    <button type="submit" class="btn btn-primary btn-send text-white fw-bold">إرسال الآن</button>
+                </div>
+            </form>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,10 @@
+
+
+{% for post in latest_posts %}
+   <a href="{{ post.get_absolute_url }}"
+       class="btn btn-sm rounded-pill px-3 {% if not tag %}btn-primary{% else %}btn-outline-primary{% endif %}">
+        {{ post.title }}
+   </a>
+
+{% endfor %}
+

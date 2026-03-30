@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block content %}
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+                <div class="card-header bg-primary text-white p-4 text-center">
+                    <h3 class="mb-0 fw-bold">{% trans 'Login' %}</h3>
+                </div>
+                <div class="card-body p-4 p-md-5 bg-white">
+                    <form method="POST" enctype="multipart/form-data" id="login-form">
+                        {% csrf_token %}
+
+                        <!-- الحقول التلقائية -->
+                        <div class="mb-4">
+                            {% include 'common/form.html' with form=form %}
+                        </div>
+
+                        <div class="d-grid gap-2 mt-4">
+                            <button class="btn btn-primary rounded-pill fw-bold py-2 shadow-sm">
+                                {% trans 'Login' %} <i class="bi bi-box-arrow-in-right ms-2"></i>
+                            </button>
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <a href="{% url 'password_reset' %}" class="text-decoration-none small text-muted hover-primary">
+                                <i class="bi bi-question-circle me-1"></i> نسيت كلمة المرور؟
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- "محرك" إضافة العين تلقائياً -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // البحث عن حقل الباسوورد داخل الفورم
+        const passwordInput = document.querySelector('input[type="password"]');
+
+        if (passwordInput) {
+            // 1. تغليف الحقل داخل Input Group
+            const wrapper = document.createElement('div');
+            wrapper.className = 'input-group mb-3';
+            passwordInput.parentNode.insertBefore(wrapper, passwordInput);
+            wrapper.appendChild(passwordInput);
+
+            // 2. إضافة أيقونة العين
+            const eyeBtn = document.createElement('span');
+            eyeBtn.className = 'input-group-text bg-white border-start-0 cursor-pointer rounded-end-pill';
+            eyeBtn.innerHTML = '<i class="bi bi-eye-slash text-muted" id="toggleIcon"></i>';
+            eyeBtn.style.cursor = 'pointer';
+            wrapper.appendChild(eyeBtn);
+
+            // 3. تنسيق الحقل ليكون كبسولة
+            passwordInput.classList.add('border-end-0', 'rounded-start-pill');
+
+            // 4. وظيفة التبديل (Show/Hide)
+            eyeBtn.addEventListener('click', function() {
+                const icon = document.getElementById('toggleIcon');
+                if (passwordInput.type === 'password') {
+                    passwordInput.type = 'text';
+                    icon.classList.replace('bi-eye-slash', 'bi-eye');
+                    icon.classList.add('text-primary');
+                } else {
+                    passwordInput.type = 'password';
+                    icon.classList.replace('bi-eye', 'bi-eye-slash');
+                    icon.classList.remove('text-primary');
+                }
+            });
+        }
+    });
+</script>
+
+<style>
+    .hover-primary:hover { color: #0d6efd !important; text-decoration: underline !important; }
+    /* لضمان تناسق الطول مع البوتستراب */
+    .input-group-text { border-color: #dee2e6; }
+</style>
+{% endblock %}

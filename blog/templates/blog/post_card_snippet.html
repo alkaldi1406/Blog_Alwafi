@@ -1,0 +1,27 @@
+<div class="col">
+    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden hover-card">
+        {% if post.image %}
+
+                  <!-- زر الإعجاب: وضعنا له z-index عالي ليظهر فوق الرابط الشامل -->
+            <div class="position-absolute top-0 end-0 m-3" style="z-index: 5;">
+                <div class="bg-white bg-opacity-75 backdrop-blur rounded-pill px-3 py-1 shadow-sm d-flex align-items-center hover-scale" style="border: 1px solid rgba(255,255,255,0.3);">
+                    <i class="bi bi-heart-fill text-danger me-1"></i>
+                    <span class="fw-bold text-dark small">{{ post.total_likes }}</span>
+                </div>
+            </div>
+
+            <img src="{{ post.image.url }}" class="card-img-top" style="height: 180px; object-fit: cover;">
+        {% endif %}
+        <div class="card-body p-4">
+            <h5 class="card-title fw-bold">
+                <a href="{{ post.get_absolute_url }}" class="text-decoration-none text-dark stretched-link">
+                    {{ post.title }}
+                </a>
+            </h5>
+            <p class="card-text text-muted small">{{ post.content|truncatewords:15 }}</p>
+            <div class="mt-3 small text-primary fw-bold">
+                <i class="bi bi-calendar3"></i> {{ post.published|date:"d M Y" }}
+            </div>
+        </div>
+    </div>
+</div>
