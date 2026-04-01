@@ -157,9 +157,10 @@ MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
 
+LOGOUT_REDIRECT_URL = 'blog:index'  # يرجعه للرئيسية فوراً
 
 LOGIN_REDIRECT_URL = '/'
-LOGOUT_REDIRECT_URL = '/accounts/login'
+# LOGOUT_REDIRECT_URL = '/accounts/login'
 
 
 

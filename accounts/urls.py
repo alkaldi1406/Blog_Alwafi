@@ -1,18 +1,16 @@
-from django.contrib.auth.views import LoginView
-from django.urls import path, include
+from django.urls import path
 from accounts import views
 from accounts.forms import UserLoginForm
-from accounts.views import register
 from django.contrib.auth import views as auth_views
 
 
 
 urlpatterns = [
-    path('login/', LoginView.as_view(authentication_form=UserLoginForm), name='login'),
-    path('register/', register, name='register'),
+    path('login/', auth_views.LoginView.as_view(authentication_form=UserLoginForm), name='login'),
+    path('logout/', auth_views.LogoutView.as_view(), name='logout'),
+    path('register/', views.register, name='register'),
     path('activate/<uidb64>/<token>/', views.activate, name='activate'),
     path('profile/', views.profile, name='profile'),
-    path('',include('django.contrib.auth.urls')),
     # 1. صفحة طلب استعادة كلمة السر (إدخال الإيميل)
     path('password_reset/', auth_views.PasswordResetView.as_view(), name='password_reset'),
 

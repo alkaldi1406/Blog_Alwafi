@@ -76,12 +76,17 @@
                         </div>
 
                         <div class="vr mx-1 d-none d-lg-block"></div>
-                        <span class="text-dark fw-bold small d-none d-md-inline">{{ user.username }}</span>
+                        <span class="text-dark fw-bold small d-none d-md-inline">أهلاً وسهلاً : {{ user.username }}</span>
 
-                        <form action="{% url 'logout' %}" method="post" class="m-0">
+                        <!-- زر الخروج الصريح والمضمون 100% -->
+                        <form action="{% url 'logout' %}" method="post" class="m-0 d-inline">
                             {% csrf_token %}
-                            <button type="submit" class="btn btn-outline-danger btn-sm rounded-pill px-3 fw-bold">خروج</button>
+                            <button type="submit" class="btn btn-outline-danger btn-sm rounded-pill px-3 fw-bold shadow-sm transition-all">
+                                خروج <i class="bi bi-box-arrow-right ms-1"></i>
+                            </button>
                         </form>
+
+
                     {% else %}
                         <a href="{% url 'register' %}" class="btn btn-primary rounded-pill px-3 fw-bold shadow-sm btn-sm">إنشاء حساب</a>
                         <a href="{% url 'login' %}" class="btn btn-outline-success rounded-pill px-3 fw-bold btn-sm">دخول</a>

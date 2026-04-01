@@ -1,6 +1,8 @@
 .env
 .idea/
 blog_data.json
+media/
+
 
 # إخفاء ملفات البيانات الحساسة (الأهم)
 
